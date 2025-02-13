@@ -4,8 +4,6 @@ An AI-powered research assistant that performs iterative, deep research on any t
 
 The goal of this repo is to provide the simplest implementation of a deep research agent - e.g. an agent that can refine its research direction over time and deep dive into a topic. Goal is to keep the repo size at <500 LoC so it is easy to understand and build on top of.
 
-If you like this project, please consider starring it and giving me a follow on [X/Twitter](https://x.com/dzhng). This project is sponsored by [Aomni](https://aomni.com).
-
 ## How It Works
 
 ```mermaid
@@ -103,6 +101,7 @@ OPENAI_KEY="your_openai_key"
 ```
 
 To use local LLM, comment out `OPENAI_KEY` and instead uncomment `OPENAI_ENDPOINT` and `OPENAI_MODEL`:
+
 - Set `OPENAI_ENDPOINT` to the address of your local server (eg."http://localhost:1234/v1")
 - Set `OPENAI_MODEL` to the name of the model loaded in your local server.
 
@@ -120,6 +119,7 @@ docker compose up -d
 ```
 
 5. Execute `npm run docker` in the docker service:
+
 ```bash
 docker exec -it deep-research npm run docker
 ```
@@ -186,7 +186,3 @@ OPENAI_MODEL="custom_model"
    - Compiles all findings into a comprehensive markdown report
    - Includes all sources and references
    - Organizes information in a clear, readable format
-
-## License
-
-MIT License - feel free to use and modify as needed.
